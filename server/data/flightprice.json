@@ -1,0 +1,22 @@
+{
+    "totalAmount": 3500,
+    "totalAmountUsd": 45,
+    "amount": 45,
+    "amountUsd": 45,
+    "originalAmount": 45,
+    "originalAmountUsd": 45,
+    "amountPerAdult": 45.06,
+    "amountPerChild": 0,
+    "amountPerInfant": 0,
+    "taxAmount": 0,
+    "taxAmountUsd": 0,
+    "totalTaxAmount": 0,
+    "totalTaxAmountUsd": 0,
+    "currencyCode": "USD",
+    "paymentFeeAmountUsd": 0,
+    "bookingFee": 0,
+    "bookingFeeUsd": 0,
+    "totalBookingFee": 0,
+    "totalBookingFeeUsd": 0,
+    "remainingseat": 33
+  }

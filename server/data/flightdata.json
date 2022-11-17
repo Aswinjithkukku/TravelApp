@@ -1,0 +1,10 @@
+ {
+    "time_departure": "05:10",
+    "time_arrival": "10:10",
+    "track_id": "X 152",
+    "duration": "5",   
+    "price": 3350,
+    "fuel_surcharge": 200,
+    "user_dev_fee": 22,
+    "airline_misc": 0
+}
