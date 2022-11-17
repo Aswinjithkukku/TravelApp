@@ -24,11 +24,9 @@ Use the following commeand
 
 ```
 cd server
-npm rub startDev
-
+npm rum startDev
 ```
 ```
 cd client
 npm start
-
 ```
