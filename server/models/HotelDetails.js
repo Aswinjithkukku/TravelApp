@@ -71,6 +71,41 @@ module.exports = (sequelize, DataTypes) => {
             notEmpty: true
         }
     },
+    basicOneBr: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+            notEmpty: true
+        }
+    },
+    basicTwoBr: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+            notEmpty: true
+        }
+    },
+    basicThreeBr: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+            notEmpty: true
+        }
+    },
+    basicSixBr: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+            notEmpty: true
+        }
+    },
+    basicEightBr: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        validate: {
+            notEmpty: true
+        }
+    },
     })
     //   HotelDetails.associate = (models) => {
     //     HotelDetails.hasMany(models.Photos, {

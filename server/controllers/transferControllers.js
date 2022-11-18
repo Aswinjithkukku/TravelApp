@@ -45,7 +45,7 @@ exports.createTransfers = catchAsyncErrors( async(req,res,next) => {
             PlaceId: place.id
         }
     })
-
+    // identifying the combination exist or not
     if(!isExist) {
         const transfer = await Transfers.create({
             transfer: transferName,
@@ -90,7 +90,7 @@ exports.transfer = catchAsyncErrors( async(req,res,next) => {
 
 // transfer enquiry fpr users => /api/transfer/enquiry
 exports.enquiry =  catchAsyncErrors( async(req,res,next) => {
-    const { people, airportIata, placeName, transferStatus } = req.body
+    const { people, airportIata, placeName, transferStatus, returnStatus } = req.body
 
     const airport = await Airports.findOne({ where: { iata: airportIata } }) 
     const place = await Place.findOne({ where: { place: placeName } }) 
@@ -102,6 +102,7 @@ exports.enquiry =  catchAsyncErrors( async(req,res,next) => {
         }
     })
     let amount = 0
+    // amounts distributed as per number of peoples 
     if(transferStatus === "private") {
         if(people > 4 && people < 9 ) {
             amount = (transfer.private * 2) / people
@@ -110,6 +111,11 @@ exports.enquiry =  catchAsyncErrors( async(req,res,next) => {
         }
     } else {
         amount = transfer.shared * people
+    }
+
+    // if the user asked for the return travel
+    if (returnStatus === true) {
+        amount *= 2
     }
 
     res.status(200).json({

@@ -24,7 +24,7 @@ Use the following commeand
 
 ```
 cd server
-npm rum startDev
+npm run startDev
 ```
 ```
 cd client

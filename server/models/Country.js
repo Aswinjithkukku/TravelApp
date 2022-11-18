@@ -26,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     Country.hasMany(models.Airports, {
       onDelete: "cascade",
     });
+    Country.hasMany(models.Hotels);
   };
 
   return Country;
