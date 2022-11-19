@@ -20,12 +20,14 @@ const flightRouter = require("./routes/flightRouter.js")
 const hotelRouter = require("./routes/hotelRouter.js")
 const packageRouter = require("./routes/packageRouter.js")
 const transferRouter = require("./routes/transferRouter.js")
+const excursionRouter = require("./routes/excursionRouter.js")
 
 app.use('/api/users', usersRouter)
 app.use('/api/flight', flightRouter)
 app.use('/api/hotels', hotelRouter)
 app.use('/api/place', packageRouter)
 app.use('/api/transfer', transferRouter)
+app.use('/api/excursion', excursionRouter)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

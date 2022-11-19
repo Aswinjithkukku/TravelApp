@@ -29,6 +29,9 @@ module.exports = (sequelize, DataTypes) => {
       Place.hasMany(models.Transfers, {
         onDelete: "cascade"
       });
+      Place.hasMany(models.Excursions, {
+        onDelete: 'cascade'
+      });
       
     };
 

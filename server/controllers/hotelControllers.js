@@ -1,5 +1,5 @@
 const catchAsyncErrors = require("../middlewares/catchAsyncErrors.js")
-const { Hotels, HotelDetails, Room_type, Hotel_prices,Booking, Booking_summary,Place,Airports } = require("../models")
+const { Hotels, HotelDetails,Place,Airports } = require("../models")
 const dayDifference = require('../utils/dayDifference.js')
 
 
